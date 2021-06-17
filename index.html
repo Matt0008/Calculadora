@@ -1,0 +1,20 @@
+<script>
+var PrimeiroValor = parseInt(prompt("Digite o primeiro valor:"))
+var SegundoValor = parseInt(prompt("Digite o segundo valor:"))
+var operaçao = prompt("Digite 1 para fazer uma divisão, 2 para multiplicação, 3 para soma e 4 para subtração")
+if (operaçao == 1) {
+  var Resultado = PrimeiroValor / SegundoValor
+  document.write("<h2>" + PrimeiroValor + "/" + SegundoValor + "=" + Resultado + "</h2>")
+} else if (operaçao == 2) {
+  var Resultado = PrimeiroValor * SegundoValor
+  document.write("<h2>" + PrimeiroValor + "*" + SegundoValor + "=" + Resultado + "</h2>")
+} else if (operaçao == 3) {
+  var Resultado = PrimeiroValor + SegundoValor
+  document.write("<h2>" + PrimeiroValor + "+" + SegundoValor + "=" + Resultado + "</h2>")
+} else if (operaçao == 4) {
+  var Resultado = PrimeiroValor - SegundoValor
+  document.write("<h2>" + PrimeiroValor + "-" + SegundoValor + "=" + Resultado + "</h2>")
+} else {
+  document.write("<h2>Opção invalida</h2>")
+}
+</script>
